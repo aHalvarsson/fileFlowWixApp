@@ -424,23 +424,23 @@
   border: calc(var(--size) * 0.1) solid;
   border-color: var(--main-color) transparent;
 }
-.loader.spin-6 {
-  width: calc(var(--num)*1.2);
-  height: calc(var(--num)*1.2);
+.loader.spin-6 > div {
+  width: var(--size);
+  height: var(--size);
   position: absolute;
   bottom: 0;
   &::before {
       content: '';
-      left: 0;
-      top: 0;
+      left: 50%;
+      top: 50%;
       position: absolute;
-      width: var(--num);
-      height: var(--num);
+      width: var(--size);
+      height: var(--size);
       border-radius: 50%;
       background-color: var(--main-color);
       background-image: radial-gradient(circle calc(var(--num)*0.2222) at calc(var(--num)*0.5) calc(var(--num)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.5) 0px, var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at 0px calc(var(--num)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at var(--num) calc(var(--num)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.5) var(--num), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.8333) calc(var(--num)*0.1389), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.8333) calc(var(--num)*0.1389), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.8333) calc(var(--num)*0.8333), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.1389) calc(var(--num)*0.8333), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.1389) calc(var(--num)*0.1389), var(--background-color) 100%, transparent 0);
       background-repeat: no-repeat;
-      animation: spinBack calc(var(--animation-speed)*2) linear infinite;
+      animation: spin var(--animation-speed) linear infinite;
   }
 }
 .loader.spin-7 {
