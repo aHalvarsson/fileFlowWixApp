@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 
 }
 *, *:after, *:before {
@@ -541,7 +541,7 @@ animation-delay: calc(var(--animation-speed) * 0.075);
 }
 .loadContainer {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   position: relative;
   display: flex;
