@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  --size: 22px;
+
   --num: var(--size);
   --s-num: calc(var(--size)*0.67);
   --animation-speed: 1.2s;
