@@ -425,8 +425,8 @@
   border-color: var(--main-color) transparent;
 }
 .loader.spin-6 {
-  width: calc(var(--num)*2.2);
-  height: calc(var(--num)*0.8);
+  width: calc(var(--num)*1.2);
+  height: calc(var(--num)*1.2);
   display: flex;
   align-items: center;
   justify-content: center;
