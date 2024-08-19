@@ -243,7 +243,7 @@
   height: calc(var(--size) * 2.4);
 }
 .loader.dots-4 > div {
-  animation: spin calc(var(--animation-speed) * 1.2)s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: spin calc(var(--animation-speed) * 1.2) cubic-bezier(0.5, 0, 0.5, 1) infinite;
   transform-origin: calc(var(--size) * 1.2) calc(var(--size) * 1.2);
 }
 .loader.dots-4 div:after {
@@ -256,42 +256,42 @@
   background: var(--main-color);
 }
 .loader.dots-4 div:nth-child(1) {
-  animation-delay: calc(var(--animation-speed) * -0.036)s;
+  animation-delay: calc(var(--animation-speed) * -0.036);
 }
 .loader.dots-4 div:nth-child(1):after {
   top: calc(var(--size) * 1.57);
   left: calc(var(--size) * 1.82);
 }
 .loader.dots-4 div:nth-child(2) {
-  animation-delay: calc(var(--animation-speed) * -0.108)s;
+  animation-delay: calc(var(--animation-speed) * -0.108);
 }
 .loader.dots-4 div:nth-child(2):after {
   top: calc(var(--size) * 1.87);
   left: calc(var(--size) * 1.5);
 }
 .loader.dots-4 div:nth-child(3) {
-  animation-delay: calc(var(--animation-speed) * -0.18)s;
+  animation-delay: calc(var(--animation-speed) * -0.18);
 }
 .loader.dots-4 div:nth-child(3):after {
   top: calc(var(--size) * 2);
   left: calc(var(--size) * 1.09);
 }
 .loader.dots-4 div:nth-child(4) {
-  animation-delay: calc(var(--animation-speed) * -0.252)s;
+  animation-delay: calc(var(--animation-speed) * -0.252);
 }
 .loader.dots-4 div:nth-child(4):after {
   top: calc(var(--size) * 1.94);
   left: calc(var(--size) * 0.66);
 }
 .loader.dots-4 div:nth-child(5) {
-  animation-delay: calc(var(--animation-speed) * -0.324)s;
+  animation-delay: calc(var(--animation-speed) * -0.324);
 }
 .loader.dots-4 div:nth-child(5):after {
   top: calc(var(--size) * 1.71);
   left: calc(var(--size) * 0.29);
 }
 .loader.dots-4 div:nth-child(6) {
-  animation-delay: calc(var(--animation-speed) * -0.396)s;
+  animation-delay: calc(var(--animation-speed) * -0.396);
 }
 .loader.dots-4 div:nth-child(6):after {
   top: calc(var(--size) * 1.34);
