@@ -4,11 +4,6 @@
   width: 100%;
   height: 100%;
 
-  --num: var(--size);
-  --s-num: calc(var(--size)*0.67);
-  --animation-speed: 1.2s;
-  --approved-color: #3ebc3b;
-  --rejected-color: #cc3333;
 }
 *, *:after, *:before {
   box-sizing: border-box;
