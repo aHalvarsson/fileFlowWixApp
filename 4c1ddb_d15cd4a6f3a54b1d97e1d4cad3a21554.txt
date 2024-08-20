@@ -424,7 +424,6 @@
   border: calc(var(--size) * 0.1) solid;
   border-color: var(--main-color) transparent;
 }
-/* Spin-6 loader */
 .loader.spin-6 > div {
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
