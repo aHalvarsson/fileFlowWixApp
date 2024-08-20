@@ -425,18 +425,19 @@
   border-color: var(--main-color) transparent;
 }
 .loader.spin-6 > div {
-  width: calc(var(--size) * 1);
-  height: calc(var(--size) * 1);
-  position: relative;
-
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
- .loader.spin-6 > div:before {
+ .loader.spin-6 > div::before {
       content: '';
       position: absolute;
-      left: 0;
-      top: 0;
-      width: calc(var(--size) * 2);
-  height: calc(var(--size) * 2);
+      left: 50%;
+      top: 50%;
+      width: var(--size);
+  height: var(--size);
 
       border-radius: 50%;
       background-color: var(--main-color);
