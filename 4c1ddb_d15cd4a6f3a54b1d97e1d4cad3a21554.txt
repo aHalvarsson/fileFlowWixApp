@@ -432,9 +432,7 @@
 
  .loader.spin-6 > div:before {
       content: '';
-      left: 0;
-      top: 0;
-      position: absolute;
+
       width: var(--size);
       height: var(--size);
       border-radius: 50%;
