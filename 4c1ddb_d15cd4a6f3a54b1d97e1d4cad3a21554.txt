@@ -431,7 +431,7 @@
   top: 0;
   left: 0;
 }
- .loader.spin-6 > div::before {
+ .loader.spin-6 > div:after {
       content: '';
       position: absolute;
       left: -50%;
