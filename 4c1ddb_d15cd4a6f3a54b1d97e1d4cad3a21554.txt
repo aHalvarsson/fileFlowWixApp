@@ -326,7 +326,7 @@
   animation: dotFade var(--animation-speed) ease 0s infinite alternate;
 }
 /* Spin loader */
-.loader.spin, .loader.spin-2, .loader.spin-3, .loader.spin-4, .loader.spin-5, .loader.spin-6 {
+.loader.spin, .loader.spin-2, .loader.spin-3, .loader.spin-4, .loader.spin-5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,10 +424,19 @@
   border: calc(var(--size) * 0.1) solid;
   border-color: var(--main-color) transparent;
 }
-.loader.spin-6 > div {
+.loader.spin-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
-
+}
+.loader.spin-6 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--size) * 2);
+  height: calc(var(--size) * 2);
 }
 
  .loader.spin-6 > div:before {
