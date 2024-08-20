@@ -428,10 +428,10 @@
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
   position: absolute;
-  left: 100%;
-  top: 100%;
+  left: 0;
+  top: 0;
 }
- .loader.spin-6 > div::before {
+ .loader.spin-6 > div:before {
       content: '';
       position: absolute;
       left: 0;
