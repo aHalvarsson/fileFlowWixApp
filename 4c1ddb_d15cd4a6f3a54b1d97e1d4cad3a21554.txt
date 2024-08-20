@@ -425,13 +425,14 @@
   border-color: var(--main-color) transparent;
 }
 .loader.spin-6 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
 }
 .loader.spin-6 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
