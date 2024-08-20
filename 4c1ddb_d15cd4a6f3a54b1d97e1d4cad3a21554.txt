@@ -424,15 +424,21 @@
   border: calc(var(--size) * 0.1) solid;
   border-color: var(--main-color) transparent;
 }
+.loader.spin-6 {
+  width: calc(var(--size) * 1.2);
+  height: calc(var(--size) * 1.2);
+  position: relative;
+}
 .loader.spin-6 > div {
   width: calc(var(--size) * 1.2);
   height: calc(var(--size) * 1.2);
   position: absolute;
   bottom: 0;
-  &::before {
+}
+ .loader.spin-6 > div::before {
       content: '';
-      left: 50%;
-      top: 50%;
+      left: 0;
+      top: 0;
       position: absolute;
       width: var(--size);
       height: var(--size);
@@ -442,7 +448,7 @@
       background-repeat: no-repeat;
       animation: spin var(--animation-speed) linear infinite;
   }
-}
+
 .loader.spin-7 {
 display: flex;
 align-items: center;
