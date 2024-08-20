@@ -433,6 +433,7 @@
  .loader.spin-6 > div:before {
       content: '';
       top: 0;
+      left: 0;
       position: absolute;
       width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
