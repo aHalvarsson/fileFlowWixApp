@@ -427,9 +427,7 @@
 .loader.spin-6 > div {
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
  .loader.spin-6 > div:after {
       content: '';
