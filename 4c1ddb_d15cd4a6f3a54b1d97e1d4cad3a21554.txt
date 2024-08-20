@@ -425,8 +425,8 @@
   border-color: var(--main-color) transparent;
 }
 .loader.spin-6 > div {
-  width: calc(var(--size) * 2);
-  height: calc(var(--size) * 2);
+  width: calc(var(--size));
+  height: calc(var(--size));
   position: relative;
 
 }
@@ -436,8 +436,8 @@
       top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-      width: calc(var(--size) * 2);
-  height: calc(var(--size) * 2);
+      width: calc(var(--size));
+  height: calc(var(--size));
 
 
       border-radius: 50%;
