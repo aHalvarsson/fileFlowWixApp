@@ -427,13 +427,11 @@
 .loader.spin-6 > div {
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
-  position: relative;
+
 }
  .loader.spin-6 > div:after {
       content: '';
-      position: absolute;
-      left: -50%;
-      top: -50%;
+
       width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
 
