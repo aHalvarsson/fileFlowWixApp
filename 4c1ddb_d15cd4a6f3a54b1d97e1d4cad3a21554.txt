@@ -424,11 +424,17 @@
   border: calc(var(--size) * 0.1) solid;
   border-color: var(--main-color) transparent;
 }
+.loader.spin-6 {
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+}
 .loader.spin-6 > div {
-  width: calc(var(--size) * 1.2);
-  height: calc(var(--size) * 1.2);
+  width: var(--size);
+  height: var(--size);
   position: absolute;
-  bottom: 0;
+  left: 0;
+  top: 0;
 }
 
  .loader.spin-6 > div:before {
