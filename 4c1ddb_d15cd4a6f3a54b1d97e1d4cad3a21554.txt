@@ -427,8 +427,8 @@
 .loader.spin-6 > div {
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
-  position: relative;
-  transform: translate(-50%, -50%);
+  position: absolute;
+
 }
 
  .loader.spin-6 > div:before {
@@ -436,6 +436,7 @@
       left: 0;
       top: 0;
       position: absolute;
+      transform: translate(-50%, -50%);
       width: calc(var(--size) * 2);
       height: calc(var(--size) * 2);
       border-radius: 50%;
