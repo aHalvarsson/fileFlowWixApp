@@ -427,16 +427,18 @@
 .loader.spin-6 > div {
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
-  position: relative;
-
+  position: absolute;
+  top: 0;
+  left: 0;
 }
  .loader.spin-6 > div:after {
       content: '';
       position: absolute;
-      left: -50%;
-      top: -50%;
+      left: 0;
+      top: 0;
       width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
+  transform: translate(-50%, -50%);
 
       border-radius: 50%;
       background-color: var(--main-color);
