@@ -425,24 +425,27 @@
   border-color: var(--main-color) transparent;
 }
 .loader.spin-6 > div {
-  width: var(--size);
-  height: var(--size);
+  width: calc(var(--size) * 1.2);
+  height: calc(var(--size) * 1.2);
   position: absolute;
   bottom: 0;
-  &::before {
+}
+
+ .loader.spin-6 > div:before {
       content: '';
       left: 50%;
       top: 50%;
       position: absolute;
+      transform: translate(-50%, -50%);
       width: var(--size);
       height: var(--size);
       border-radius: 50%;
       background-color: var(--main-color);
-      background-image: radial-gradient(circle calc(var(--num)*0.2222) at calc(var(--num)*0.5) calc(var(--num)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.5) 0px, var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at 0px calc(var(--num)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at var(--num) calc(var(--num)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.5) var(--num), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.8333) calc(var(--num)*0.1389), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.8333) calc(var(--num)*0.1389), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.8333) calc(var(--num)*0.8333), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.1389) calc(var(--num)*0.8333), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--num)*0.1111) at calc(var(--num)*0.1389) calc(var(--num)*0.1389), var(--background-color) 100%, transparent 0);
+      background-image: radial-gradient(circle calc(var(--size)*0.2222) at calc(var(--size)*0.5) calc(var(--size)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.5) 0px, var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at 0px calc(var(--size)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at var(--size) calc(var(--size)*0.5), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.5) var(--size), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.8333) calc(var(--size)*0.1389), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.8333) calc(var(--size)*0.1389), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.8333) calc(var(--size)*0.8333), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.1389) calc(var(--size)*0.8333), var(--background-color) 100%, transparent 0), radial-gradient(circle calc(var(--size)*0.1111) at calc(var(--size)*0.1389) calc(var(--size)*0.1389), var(--background-color) 100%, transparent 0);
       background-repeat: no-repeat;
       animation: spin var(--animation-speed) linear infinite;
   }
-}
+
 .loader.spin-7 {
 display: flex;
 align-items: center;
