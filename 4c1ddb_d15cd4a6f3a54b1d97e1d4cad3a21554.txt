@@ -427,13 +427,12 @@
 .loader.spin-6 > div {
   width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
-  position: relative;
+  position: absolute;
+  top: 0;
   animation: spin var(--animation-speed) linear infinite
 }
- .loader.spin-6 > div:before {
+ .loader.spin-6 > div::before, .loader.spin-6 > div::after {
       content: '';
-      top: 0;
-      left: 0;
       position: absolute;
       width: calc(var(--size) * 2);
   height: calc(var(--size) * 2);
