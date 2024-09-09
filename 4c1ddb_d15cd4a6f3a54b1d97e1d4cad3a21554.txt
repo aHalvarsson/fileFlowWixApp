@@ -120,13 +120,13 @@ opacity:0
 }
 
 @keyframes fadeOut {
+0%,30% {
+opacity:1
+}
+
 100% {
 opacity:0;
 transform:scale(0.3)
-}
-
-0%,30% {
-opacity:1
 }
 }
 
