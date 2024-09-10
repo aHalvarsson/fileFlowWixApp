@@ -652,6 +652,17 @@ z-index:2;
 -webkit-mask-image:var(--approve-url);
 background-color:var(--approved-color);
 mask-image:var(--approve-url);
+-webkit-mask-clip:border-box;
+-webkit-mask-mode:alpha;
+-webkit-mask-position:center;
+-webkit-mask-repeat:no-repeat;
+-webkit-mask-size:400% 400%;
+border-radius:50%;
+mask-clip:border-box;
+mask-mode:alpha;
+mask-position:center;
+mask-repeat:no-repeat;
+mask-size:400% 400%
 }
 
 .text-ending,.icons-ending {
