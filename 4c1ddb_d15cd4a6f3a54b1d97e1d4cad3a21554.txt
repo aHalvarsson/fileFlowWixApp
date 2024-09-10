@@ -641,6 +641,19 @@ position:absolute;
 z-index:1
 }
 
+#ending {
+bottom:0;
+display:flex;
+justify-content:center;
+min-height:var(--size);
+position:absolute;
+width:100%;
+z-index:2;
+-webkit-mask-image:var(--approve-url);
+background-color:var(--approved-color);
+mask-image:var(--approve-url);
+}
+
 .text-ending,.icons-ending {
 display:none;
 min-height:var(--size);
@@ -680,13 +693,13 @@ mask-size:400% 400%
 .icons-ending-approved {
 -webkit-mask-image:var(--approve-url);
 background-color:var(--approved-color);
-mask-image:var(--approve-url)
+mask-image:var(--approve-url);
 }
 
 .icons-ending-rejected {
 -webkit-mask-image:var(--reject-url);
 background-color:var(--rejected-color);
-mask-image:var(--reject-url)
+mask-image:var(--reject-url);
 }
 
 .loader.spin,.loader.spin-2,.loader.spin-3,.loader.spin-4,.loader.spin-5,.loader.spin-6,.loader.spin-8 {
