@@ -11,7 +11,7 @@ width:100%
   --size: 22px;
   --num: var(--size);
   --s-num: calc(var(--size)*0.67);
-  --animation-speed: 1.2s;
+  --animation-speed: 2.2s;
   --approve-url: url(https://static.wixstatic.com/shapes/4c1ddb_65dc897c908740c5ba11be9529531d6a.svg);
   --reject-url: url(https://static.wixstatic.com/shapes/4c1ddb_fc3ea8f267f047dcb50fee8c2748b31a.svg);
 }
